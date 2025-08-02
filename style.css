@@ -3,17 +3,37 @@
     margin: 0;
     box-sizing: border-box;
 }
-}
+
 html{
   font-size: 62.5%;
 }
- /* body{
+
+.banner{
+    height: 3rem;
+    background-color: lightblue;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
-    background-color: #e0f7fa;
- } */
+    justify-content: center;
+    align-items: center;
+}
+.sale{
+    padding-right: 1rem;
+   
+}
+.sale p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.time{
+    display: flex;
+    align-items: center;
+
+}
+
+
+.time p{
+    padding:0 0.5rem;
+}
+
  
  header{ 
     background-color: white;
@@ -67,9 +87,9 @@ li:hover a{
 }
 
 .logo{
-    height: 4rem;
+    height: 6rem;
     width: auto;
-    transition: transform 0.5s ease-in-out;
+
 }
 
 .video{
