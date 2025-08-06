@@ -29,12 +29,20 @@
         </div>
     </div>
     <header>
-         <nav>
+        <nav>
+             <ul class="sidebar">
+                <li onclick=hideSidebar()><a><img src="close_sidebar.png" alt="close sidebar icon"></a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#"> Contact us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="">Checkout</a></li>
+            </ul>
             <ul>
-               <a href="/index.html"><img class="logo" src="e.t logo.png" alt=""></a>
-                <li>contac us</li>
-                <li><a href="products/products.html">Products</a></li>
-                <li> check out</li>
+                <li><a href="/index.html"><img class="logo" src="e.t logo.png" alt=""></a</li>
+                <li class="hideMobile"><a href="#"> Contact us</a></li>
+                <li class="hideMobile"><a href="products/products.html">Products</a></li>
+                <li class="hideMobile"><a href=""><img src="shopping.png" alt=""> </a></li>
+                <li class="menu-btn" onclick=showSidebar()><a><img src="sidebar.png" alt="sidebar icon"></a></li>
             </ul>
         </nav>
 </header>
