@@ -14,7 +14,7 @@ body{
 
 .banner{
     height: 3rem;
-    background-color: lightblue;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,15 +28,18 @@ n
 .sale p {
     font-size: 1.5rem;
     font-weight: bold;
+    color: white;
 }
 .time{
+    padding-left: 1rem;
     display: flex;
     align-items: center;
+    color: white;
 
 }
 
-
 .time p{
+    font-size: 1.2rem;
     padding:0 0.5rem;
 }
 
@@ -113,91 +116,78 @@ margin-right: auto;
 
 }
 
-.parent {
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+    height: 14rem;
+    padding-top: 2rem;
+}
+
+
+.footer-aboutus{
+    display: flex;
+    flex-direction: column;
+}
+.footer-aboutus h2{
+    color: gray;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+.footer-aboutus a{
+    color: white;
+    height: 2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.footer-aboutus a:hover{
+    text-decoration: underline;
+}
+.footer-socials{
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-socials a{
+    background-color: #f0f0f0;
+    padding: 1em;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    box-sizing: border-box;
+    flex-shrink: 0;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
-    border: solid black 1px;
-}
-    
-.div1 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 2;
-    grid-row-start: 2;
-    border: solid black 1px;
+    place-items: center;
 }
 
-.div2 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 1;
-    grid-row-start: 3;
-    border: solid black 1px;
+.footer-socials a svg{
+    height: 2rem;
 }
 
-.div3 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 1;
-    grid-row-start: 5;
-    border: solid black 1px;
+.footer-socials a:hover{
+    background-color: var(--accent-color);
+    fill: white;
 }
 
-.div4 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 2;
-    grid-row-start: 4;
-    border: solid black 1px;
-}
 
-.div5 {
-    grid-column: span 5 / span 5;
-    grid-column-start: 1;
-    grid-row-start: 1;
-    border: solid black 1px;
+.footer-returns{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
-
-.div6 {
-    grid-row: span 3 / span 3;
-    grid-column-start: 3;
-    grid-row-start: 2;
-    border: solid black 1px;
+.footer-returns h2{
+    color: gray;
+    font-size: 2rem;
+    padding-bottom: 3px;
 }
+.footer-returns a{
+    color: white;
+    height: 2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
 
-.div7 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 5;
-    border: solid black 1px;
 }
-
-.div8 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 4;
-    grid-row-start: 2;
-    border: solid black 1px;
-}
-
-.div9 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 4;
-    grid-row-start: 4;
-    border: solid black 1px;
-}
-
-.div10 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 5;
-    grid-row-start: 2;
-    border: solid black 1px;
-}
-
-.div11 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 5;
-    grid-row-start: 4;
-    border: solid black 1px;
-}
-
 
 
 @media (max-width: 800px){
