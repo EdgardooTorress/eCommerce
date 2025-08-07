@@ -127,6 +127,90 @@ video:hover {
     text-decoration: none;
 }
 
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+    height: 14rem;
+    padding-top: 2rem;
+}
+
+
+.footer-aboutus{
+    display: flex;
+    flex-direction: column;
+}
+.footer-aboutus h2{
+    color: gray;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+.footer-aboutus a{
+    color: white;
+    height: 2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.footer-aboutus a:hover{
+    text-decoration: underline;
+}
+.footer-socials{
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-socials a{
+    background-color: #f0f0f0;
+    padding: 1em;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+}
+
+.footer-socials a svg{
+    height: 2rem;
+}
+
+.footer-socials a:hover{
+    background-color: var(--accent-color);
+    fill: white;
+}
+
+
+.footer-returns{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer-returns h2{
+    color: gray;
+    font-size: 2rem;
+    padding-bottom: 3px;
+}
+.footer-returns a{
+    color: white;
+    height: 2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+
+}
+
+.footer-returns a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 800px){
