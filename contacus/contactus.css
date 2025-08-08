@@ -109,7 +109,7 @@ nav li:first-child {
 main {
   display: flex;
   justify-content: center;
-  margin: 10rem 0;
+  margin: 7rem 0;
 }
 .title {
   text-align: center;
@@ -122,9 +122,9 @@ main {
 }
 
 .container-form {
-  background-color: rgba(0, 0, 0, 0.408);
-  height: 50rem;
-  width: 50rem;
+  background-color:#B9B7BD;
+  height: 55rem;
+  width: 55rem;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -133,18 +133,57 @@ main {
 form {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .input-container {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  align-items:center;
   gap: 1rem;
+  padding-left: 10rem;
 }
 
-button {
-  width: 3rem;
+.input-container input,textarea{
+  width: 60%;
+  height: 3rem;
+  border: 2px solid black;
+  box-shadow: 1px 1px 1px 1px;
+  border-radius: 10px;
+}
+
+.input-container textarea{
+  width: 60%;
+  height: 10rem;
+  border: 2px solid black;
+  box-shadow: 1px 1px 1px 1px;
+  border-radius: 10px;
+}
+label{
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+
+.form-btn {
+  margin-top: 2rem;
+  width: 12rem;
+  height: 3rem;
   align-self: center;
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  background-color: rgb(231, 213, 213);
+}
+
+.form-btn:hover{
+  transform: scale(1.2);
+  background-color: black;
+  color: white;
+
+
+
 }
 
 footer {
@@ -229,7 +268,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 425px) {
     .sidebar {
       width: 100%;
     }
