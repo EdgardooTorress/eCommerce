@@ -1,72 +1,72 @@
 [
     {
-        "img":"products/products-img/valentino.webp",
+        "img":"/products/products-img/valentino.webp",
         "name": "VALENTINO" ,
         "description":"Uomo Born in Roma Intense Eu de Parfum Spray, 3.4 oz." ,
         "price": "$160.00"
     },
     {
-        "img": "products/products-img/YSL.webp",
+        "img": "/products/products-img/YSL.webp",
         "name": "YVES SAINT LAURENT" ,
         "description": "Y Eau de Parfum Spray, 3.3 oz." ,
         "price": "$165.00" 
     },
     {
-        "img": "products/products-img/carolina herrera.webp",
+        "img": "/products/products-img/carolina herrera.webp",
         "name":"CAROLINA HERRERA" ,
         "description":"Bad Boy Eau de Toilette Spray, 5.1 oz." ,
         "price": "$160.00" 
     },
     {
-        "img": "products/products-img/rabanne.webp",
+        "img": "/products/products-img/rabanne.webp",
         "name": "RABANNE" ,
         "description": "Phantom Eau de Toilette, 3.3 oz.",
         "price": "$123.00"
     },
     {
-        "img":"products/products-img/creed.webp",
+        "img":"/products/products-img/creed.webp",
         "name": "CREED" ,
         "description": "Aventus, 3.3 oz.",
         "price": "$510.00"
     },
     {
-        "img": "products/products-img/Eros.webp",
+        "img": "/products/products-img/Eros.webp",
         "name": "VERSACE" ,
         "description": "Eros Flame Eau de Parfum, 3.40 oz. ",
         "price": "$139.00"
     },
     {
-        "img": "products/products-img/prada.webp",
+        "img": "/products/products-img/prada.webp",
         "name":"PRADA" ,
         "description":"Luna Rossa Ocean Eau de Toilette Spray, 5.0 oz." ,
         "price": "$165.00"
     },
     {
-        "img": "products/products-img/Rabanne elixir.webp",
+        "img": "/products/products-img/Rabanne elixir.webp",
         "name": "RABANNE",
         "description": "Invcistus Victory Elixir Parfum Spray, 3.40 oz.",
         "price":"$168.00"
     },
     {
-        "img": "products/products-img/Stronger.webp",
+        "img": "/products/products-img/Stronger.webp",
         "name": "GIORGIO ARMANI",
         "description":"Stronger With You Intensily Eau de Parfum Spray, 3.4oz" ,
         "price": "$130.00"
     },
     {
-        "img": "products/products-img/Absolute.webp" ,
+        "img": "/products/products-img/Absolute.webp" ,
         "name": "CREED",
         "description":"Absolute Aventus Spray, 3.3 oz." ,
         "price": "$610.00"
     },
     {
-        "img": "products/products-img/le male.webp",
+        "img": "/products/products-img/le male.webp",
         "name": "JEAN PAUL GAULTIER",
         "description": "Le Male Elixir Parfum Spray, 6.7 oz.",
         "price": "$216.00"
     },
     {
-        "img": "products/products-img/lucky.webp",
+        "img": "/products/products-img/lucky.webp",
         "name": "RABANNE" ,
         "description": "1 Million Lucky Eau de Toilette Spray, 6.8 oz." ,
         "price": "$163.00"

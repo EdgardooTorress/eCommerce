@@ -1,0 +1,264 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.banner {
+  height: 3rem;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sale {
+  padding-right: 1rem;
+}
+.sale p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+.time {
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.time p {
+  font-size: 1.2rem;
+  padding: 0 0.5rem;
+}
+
+nav {
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  height: 5rem;
+}
+
+nav a {
+  height: 100%;
+  font-size: 1.5rem;
+  padding: 0 3rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+nav a:hover {
+  background-color: #f0f0f0;
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 25rem;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.181);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.logo {
+  height: 6rem;
+  width: auto;
+}
+main {
+  display: flex;
+  justify-content: center;
+  margin: 10rem 0;
+}
+.title {
+  text-align: center;
+  margin: 2rem;
+  padding: 3rem;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 5rem;
+  color: white;
+}
+
+.container-form {
+  background-color: rgba(0, 0, 0, 0.408);
+  height: 50rem;
+  width: 50rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+  width: 3rem;
+  align-self: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+  color: white;
+  height: 14rem;
+  padding-top: 2rem;
+}
+
+.footer-aboutus {
+  display: flex;
+  flex-direction: column;
+}
+.footer-aboutus h2 {
+  color: gray;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.footer-aboutus a {
+  color: white;
+  height: 2rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.footer-aboutus a:hover {
+  text-decoration: underline;
+}
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-socials a {
+  background-color: #f0f0f0;
+  padding: 1em;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+}
+
+.footer-socials a svg {
+  height: 2rem;
+}
+
+.footer-socials a:hover {
+  background-color: var(--accent-color);
+  fill: white;
+}
+
+.footer-returns {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer-returns h2 {
+  color: gray;
+  font-size: 2rem;
+  padding-bottom: 3px;
+}
+.footer-returns a {
+  color: white;
+  height: 2rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .hideMobile {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 400px) {
+    .sidebar {
+      width: 100%;
+    }
+    .menu-btn {
+      display: block;
+    }
+
+    .sale p {
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .time p {
+      font-size: 1rem;
+      padding: 0 0.5rem;
+    }
+
+    .box {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
+
+    footer {
+      padding-left: 3rem;
+      flex-direction: column;
+      gap: 3rem;
+      height: auto;
+    }
+  }
+}

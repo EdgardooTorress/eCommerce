@@ -10,6 +10,7 @@ html{
 
 body{
     min-height: 100vh;
+
 }
 
 .banner{
@@ -117,19 +118,47 @@ margin-right: auto;
 
 }
 
-.video{
-    height: 700px;
-}
+/* .video{
+    height: 800px;
+} */
 video {
     width: 100vw;
-    height: 70vh;
+    height: 60vh;
     object-fit: fill;
+    margin-bottom: 3rem;
     
 }
 
 video:hover {
     text-decoration: none;
 }
+
+.review-title{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+
+}
+.reviews{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+  
+}
+.review-box{
+    border: solid 1px black;
+    min-width: 30rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+
+}
+
+
 
 footer{
     display: flex;
@@ -224,13 +253,37 @@ footer{
     .menu-btn{
         display: block;
     }
+    .reviews{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-@media (max-width: 400px){
+@media (max-width: 425px){
     .sidebar{
         width: 100%;
     }
         .menu-btn{
         display: block;
     }
+        .reviews{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
+   .sale p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    }
+
+    .time p{
+    font-size: 1rem;
+    padding:0 0.5rem;
+    }
+
+
+    footer{
+    padding-left: 3rem;
+    flex-direction: column;
+    gap: 3rem;
+    height: auto;}
+}}

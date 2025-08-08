@@ -4,18 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-</head>
-
-<title>ETfragance
-</title>
+    <link rel="stylesheet" href="contactus.css">
+    <title>Products</title>
 </head>
 
 <body>
     <div class="banner">
         <div class="sale">
-            <p>FLASH SALE⚡️ </p>
+            <p>FLASH SALE⚡️</p>
         </div>
         <div class="time">
             <h2 id="days">00</h2>
@@ -38,64 +34,53 @@
         <nav>
             <ul class="sidebar">
                 <li onclick=hideSidebar()><a><img src="close_sidebar.png" alt="close sidebar icon"></a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="/contacus/contactus.html"> Contact us</a></li>
-                <li><a href="products/products.html">Products</a></li>
-                <li><a href="#">Checkout</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#"> Contact us</a></li>
+                <li><a href="/products/products.html">Products</a></li>
+                <li><a href="">Checkout</a></li>
             </ul>
             <ul>
-                <li><a href="#"><img class="logo" src="e.t logo.png" alt=""></a></li>
-                <li class="hideMobile"><a href="/contacus/contactus.html"> Contact us</a></li>
-                <li class="hideMobile"><a href="products/products.html">Products</a></li>
-                <li class="hideMobile"><a href="#"><img src="shopping.png" alt=""> </a></li>
+                <li><a href="/index.html"><img class="logo" src="e.t logo.png" alt=""></a< /li>
+                <li class="hideMobile"><a href="#"> Contact us</a></li>
+                <li class="hideMobile"><a href="/products/products.html">Products</a></li>
+                <li class="hideMobile"><a href=""><img src="shopping.png" alt=""> </a></li>
                 <li class="menu-btn" onclick=showSidebar()><a><img src="sidebar.png" alt="sidebar icon"></a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="video">
-            <video autoplay loop muted src="valentinoo.mp4"></video>
+        <div class="container-form">
+            <form action="contactus.html" autocomplete="off" id="form">
+                <h3 class="title">Contact us</h3>
+                <div class="input-container">
+                    <input type="text" name="name" class="input">
+                    <label>First Name</label>
+                </div>
+                <div class="input-container">
+                    <input type="text" name="name" class="input">
+                    <label>Last Name</label>
+                </div>
+                <div class="input-container">
+                    <input type="email" name="email" class="input">
+                    <label>Email</label>
+                </div>
+                <div class="input-container">
+                    <input type="tel" name="phone" class="input">
+                    <label>Phone</label>
+                </div>
+                <div class="input-container textarea">
+                    <textarea name="message" class="input"></textarea>
+                    <label>Message</label>
+                </div>
+                <button type="submit" value="Send" class="btn">Send</button>
+            </form>
         </div>
 
-        <div class="review-title">
-            <h2>What costumers say:</h2>
-        </div>
+        <main>
 
 
-
-        <section class="reviews">
-            <div class="review-box">
-                <h4>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quaerat expedita necessitatibus modi
-                    quae qui exercitationem sed, est vero sapiente velit amet similique deleniti. Reprehenderit
-                    cupiditate illum exercitationem corporis nemo.
-                </h4>
-                <h5>
-                    ⭐️⭐️⭐️⭐️⭐️
-                </h5>
-            </div>
-            <div class="review-box">
-                <h4>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quaerat expedita necessitatibus modi
-                    quae qui exercitationem sed, est vero sapiente velit amet similique deleniti. Reprehenderit
-                    cupiditate illum exercitationem corporis nemo.
-                </h4>
-                <h5>
-                    ⭐️⭐️⭐️⭐️⭐️
-                </h5>
-            </div>
-            <div class="review-box">
-                <h4>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quaerat expedita necessitatibus modi
-                    quae qui exercitationem sed, est vero sapiente velit amet similique deleniti. Reprehenderit
-                    cupiditate illum exercitationem corporis nemo.
-                </h4>
-                <h5>
-                    ⭐️⭐️⭐️⭐️⭐️
-                </h5>
-        </section>
+        </main>
     </main>
-
     <footer>
         <section class="footer-aboutus">
             <h2>E.TFRAGANCE</h2>
@@ -103,8 +88,9 @@
             <a href="">Reviews</a>
             <a href="">Authenticity Gurantee</a>
 
-        </section>
 
+
+        </section>
         <section class="footer-socials">
             <a style="--accent-color: #106bff" href="https://www.facebook.com/">
                 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -148,11 +134,10 @@
             <a href="">Returns & Exchange Policy</a>
             <a href="">Returns Center</a>
             <a href="">Warranty Policy</a>
-            <a href=""></a>
 
         </section>
-    </footer>
-    <script src="script.js"></script>
+        <script src="contactus.js"></script>
+
 </body>
 
 </html>
