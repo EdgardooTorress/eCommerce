@@ -1,35 +1,34 @@
-const Days = document.getElementById('days');
-const Hours = document.getElementById('hours');
-const Minutes = document.getElementById('minutes');
-const Seconds = document.getElementById('seconds');
+const Days = document.getElementById("days");
+const Hours = document.getElementById("hours");
+const Minutes = document.getElementById("minutes");
+const Seconds = document.getElementById("seconds");
 
 const targetDate = new Date("2025-08-30T00:00:00-04:00").getTime();
 
-function timer(){
-    const currentDate = new Date().getTime();
-    const distance = targetDate - currentDate; 
+function timer() {
+  const currentDate = new Date().getTime();
+  const distance = targetDate - currentDate;
 
-    const days = Math.floor(distance / 1000 / 60/ 60/ 24) //  divide miliseconds, minutes, hours, 24
-    const hours = Math.floor(distance / 1000 / 60/ 60) % 24; 
-    const minutes = Math.floor(distance / 1000 / 60) % 60; 
-    const seconds = Math.floor(distance / 1000) % 60;
+  const days = Math.floor(distance / 1000 / 60 / 60 / 24); //  divide miliseconds, minutes, hours, 24
+  const hours = Math.floor(distance / 1000 / 60 / 60) % 24;
+  const minutes = Math.floor(distance / 1000 / 60) % 60;
+  const seconds = Math.floor(distance / 1000) % 60;
 
-    Days.innerHTML = days;
-    Hours.innerHTML = hours;
-    Minutes.innerHTML = minutes; 
-    Seconds.innerHTML = seconds; 
+  Days.innerHTML = days;
+  Hours.innerHTML = hours;
+  Minutes.innerHTML = minutes;
+  Seconds.innerHTML = seconds;
 
-    // console.log(days + ":" + hours +":" + minutes + ":" + seconds);
+  // console.log(days + ":" + hours +":" + minutes + ":" + seconds);
 }
-setInterval(timer,1000)
+setInterval(timer, 1000);
 
-
-function showSidebar(){
-    const sidebar= document.querySelector('.sidebar')
-    sidebar.style.display = 'flex'
+function showSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "flex";
 }
 
-function hideSidebar(){
-    const sidebar= document.querySelector('.sidebar')
-    sidebar.style.display = 'none'
+function hideSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "none";
 }
