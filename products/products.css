@@ -269,7 +269,7 @@ footer{
 
 }
 
-@media (max-width: 425px){
+@media (max-width: 500px){
     html{
         font-size: 40%;
     }
