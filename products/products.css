@@ -253,6 +253,10 @@ footer{
 
 
 @media (max-width: 800px){
+
+    html{
+        font-size: 50%;
+    }
     .hideMobile{
         display: none;
     }
@@ -266,6 +270,9 @@ footer{
 }
 
 @media (max-width: 425px){
+    html{
+        font-size: 40%;
+    }
     .sidebar{
         width: 100%;
     }

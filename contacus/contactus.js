@@ -33,3 +33,77 @@ function hideSidebar(){
     const sidebar= document.querySelector('.sidebar')
     sidebar.style.display = 'none'
 }
+
+///////
+
+const fullName = document.getElementById('full-name');
+const email = document.getElementById('email');
+const phone = document.getElementById('phone');
+const comment = document.getElementById('comment');
+const form = document.getElementById('form')
+
+form.addEventListener('submit',(e) => { 
+    e.preventDefault();
+
+    validateInputs();
+
+});
+
+const setError = ( element, message) =>{
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = message;
+    inputControl.classList.add('error');
+}
+
+const success = element =>{
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+    
+    errorDisplay.innerText= '';
+    inputControl.classList.add('success');
+    inputControl.classList.remove('error');
+}
+
+const validateInputs = () =>{
+    const fullNameValue = fullName.value.trim();
+    const emailValue = email.value.trim();
+    const phoneValue = phone.value.trim();
+    const commentValue = fullName.value.trim();
+
+    let isValid = true;
+
+    if (fullNameValue === ''){
+        setError(fullName, "Full name is required")
+        isValid =false;
+    } else{
+        success(fullName);
+    }
+
+        if (emailValue === ''){
+        setError(email, "Email is required")
+        isValid =false;
+    } else{
+        success(email);
+    }
+
+        if (phoneValue === ''){
+        setError(phone, "Phone number is required")
+        isValid = false;
+    } else{
+        success(phone);
+    }
+
+        if (commentValue === ''){
+        setError(comment, "Comment is required")
+        isValid = false
+    } else{
+        success(comment);
+    }
+
+    if(isValid){
+        alert(" Your form was sent!");
+        form.reset();
+    }
+}
