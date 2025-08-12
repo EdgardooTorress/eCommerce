@@ -34,20 +34,22 @@ function hideSidebar() {
   sidebar.style.display = "none";
 }
 
-///////
 
+// Get the references to each input from the id in HTML
 const fullName = document.getElementById("full-name");
 const email = document.getElementById("email");
 const phone = document.getElementById("phone");
 const comment = document.getElementById("comment");
 const form = document.getElementById("form");
 
+// When the form is subbimitted run this function
 form.addEventListener("submit", (e) => {
-  e.preventDefault();
+  e.preventDefault(); // stop the from from refreshing the page
 
-  validateInputs();
+  validateInputs(); // run our validation checks
 });
 
+// function to show an error message for a specific input
 const setError = (element, message) => {
   const inputControl = element.parentElement;
   const errorDisplay = inputControl.querySelector(".error");
@@ -56,6 +58,7 @@ const setError = (element, message) => {
   inputControl.classList.add("error");
 };
 
+//function to show succes
 const success = (element) => {
   const inputControl = element.parentElement;
   const errorDisplay = inputControl.querySelector(".error");
@@ -65,14 +68,17 @@ const success = (element) => {
   inputControl.classList.remove("error");
 };
 
+// main validaition function
 const validateInputs = () => {
-  const fullNameValue = fullName.value.trim();
+  const fullNameValue = fullName.value.trim(); // Trim removes extra spaces from the start-end from input
   const emailValue = email.value.trim();
   const phoneValue = phone.value.trim();
   const commentValue = fullName.value.trim();
 
-  let isValid = true;
+  let isValid = true; // form is valid until proven otherwise
 
+
+  //check if input is empry
   if (fullNameValue === "") {
     setError(fullName, "Full name is required");
     isValid = false;
@@ -100,7 +106,7 @@ const validateInputs = () => {
   } else {
     success(comment);
   }
-
+// if all fields are valid, show success alert and reset the form
   if (isValid) {
     alert(" Your form was sent!");
     form.reset();
