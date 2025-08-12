@@ -8,8 +8,9 @@ window.onload = function () {
       let productsHtml = ""; // One big html string for all products
       for (let i = 0; i < data.length; i++) { // loop thorugh the products
         let item = data[i];
-
-        let product = ` // create the HTML 
+      
+        // create the HTML 
+        let product = ` 
             <div class="fragance"${i + 1}>
             <img src="${item.img}" alt="productimg" class="images">
             <h1>${item.name}</h1>
