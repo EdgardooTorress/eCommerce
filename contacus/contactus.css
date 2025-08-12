@@ -197,7 +197,7 @@ footer {
   justify-content: space-evenly;
   background-color: black;
   color: white;
-  height: 14rem;
+  height: 19rem;
   padding-top: 2rem;
 }
 
@@ -213,8 +213,9 @@ footer {
 .footer-aboutus a {
   color: white;
   height: 2rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: none;
+   margin: 1rem 0;
 }
 .footer-aboutus a:hover {
   text-decoration: underline;
@@ -258,8 +259,9 @@ footer {
 .footer-returns a {
   color: white;
   height: 2rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: none;
+   margin: 1rem 0;
 }
 
 @media (max-width: 800px) {

@@ -146,8 +146,10 @@ video:hover {
 .reviews {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1fr;
   gap: 2rem;
   padding: 1rem 0 3rem;
+
 }
 .review-box {
   border: 0;
@@ -165,7 +167,7 @@ footer {
   justify-content: space-evenly;
   background-color: black;
   color: white;
-  height: 14rem;
+  height: 19rem;
   padding-top: 2rem;
 }
 
@@ -181,8 +183,9 @@ footer {
 .footer-aboutus a {
   color: white;
   height: 2rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: none;
+  margin: 1rem 0;
 }
 .footer-aboutus a:hover {
   text-decoration: underline;
@@ -226,15 +229,24 @@ footer {
 .footer-returns a {
   color: white;
   height: 2rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: none;
+   margin: 1rem 0;
 }
 
 .footer-returns a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 800px) {
+
+@media (max-width: 1260px){
+ .reviews {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+@media (max-width: 935px) {
   html {
     font-size: 50%;
   }
@@ -245,7 +257,6 @@ footer {
     display: block;
   }
   .reviews {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
   .sidebar li {
@@ -263,7 +274,6 @@ footer {
       display: block;
     }
     .reviews {
-      display: grid;
       grid-template-columns: repeat(1, 1fr);
     }
     .sale p {
@@ -280,9 +290,12 @@ footer {
     footer {
       padding-left: 3rem;
       flex-direction: column;
-      gap: 3rem;
+      gap: 5rem;
       height: auto;
     }
+
+
+
     .sidebar li {
       padding: 5rem 0;
     }
