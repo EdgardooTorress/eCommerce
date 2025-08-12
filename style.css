@@ -154,10 +154,10 @@ video:hover {
 .review-box {
   border: 0;
   min-width: 30rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center;
-  padding: 1.6rem;
+  padding: 4rem;
   border-radius: 10px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
