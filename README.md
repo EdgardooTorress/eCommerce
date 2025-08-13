@@ -19,7 +19,7 @@ The products page showcases a selection of 12 products. Each product is presente
 The contact page includes a user-friendly form where visitors can input their name, email, phone and add a comment, this facilitates easy communication between the website owner and users.
 
 # Technologies Used
-HTML5
-CSS3
-JavaScript
-JSON for data storage
+* HTML5
+* CSS3
+* JavaScript
+* JSON for data storage
